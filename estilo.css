@@ -5,44 +5,54 @@ body {
 
 .header {
   display:flex;
+  align-items: center;
 }
 
-.icone {
+div.icone {
   height: 100%;
   vertical-align: middle;
-  background-color: blue;
 }
 
-.icone img {
+.header div.icone img {
   max-width: 20px;
   max-height: 20px;
   padding: 10px;
-  vertical-align: middle;
 }
 
-.header .descricao {
-  margin:0px;
-  font-size: 1em;
-  display: block;
-  background-color:aliceblue;
-  width:100%;
-}
-
-.descricao h1 {
+div.descricao h1 {
   margin:0px;
   font-size: 1.2em;
-  font-weight: normal;
   padding-top: 10px;
 }
 
-.descricao h2 {
+div.descricao h2 {
   margin:0px;
-  font-size: .9em;
+  font-size: 1em;
   font-weight: normal;
+  font-family: monospace;
 }
 
-.descricao p {
+div.descricao p {
   margin:0px;
   font-size: .9em;
   font-style: italic;
+  padding-bottom: 10px;
+}
+
+.header .menu {
+  list-style-type: none;
+  margin:0;
+  padding:0;
+}
+
+.descricao .menu {
+  padding-left: 20px;
+}
+
+.header .menu li {
+  display:inline;
+}
+
+.header .menu li img {
+  height: 40px;
 }
