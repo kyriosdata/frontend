@@ -4,5 +4,46 @@ body {
 }
 
 .header {
-  visibility:visible;
+  display:flex;
+  background-color:yellow;
+}
+
+.header .icone {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.header img {
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+}
+
+.header .descricao {
+  margin:0px;
+  font-size: 1em;
+  display: block;
+  vertical-align: middle;
+  background-color:aliceblue;
+  width:100%;
+}
+
+.header h1 {
+  margin:0px;
+  font-size: 1.2em;
+  font-weight: normal;
+  padding-top: 10px;
+}
+
+.header h2 {
+  margin:0px;
+  font-size: .9em;
+  font-weight: normal;
+}
+
+.header p {
+  margin:0px;
+  font-size: .9em;
+  font-style: italic;
 }
