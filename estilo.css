@@ -6,6 +6,7 @@ body {
 .header {
   display:flex;
   align-items: center;
+  padding-bottom: 10px;
 }
 
 div.icone {
@@ -45,14 +46,35 @@ div.descricao p {
   padding:0;
 }
 
-.descricao .menu {
-  padding-left: 20px;
+.descricao {
+  padding-right: 25px;
 }
 
 .header .menu li {
   display:inline;
 }
 
-.header .menu li img {
+.menu li img {
   height: 40px;
+  padding:5px;
+}
+
+.tooltip {
+  visibility:hidden;
+  width:120px;
+  top:60px;
+  background-color: greenyellow;
+  text-align:center;
+  padding: 5px;
+  border-radius:5px;
+  position:absolute;
+  z-index:1;
+}
+
+.opcao:hover img {
+  background-color:greenyellow;
+}
+
+.opcao:hover .tooltip {
+  visibility:visible;
 }
