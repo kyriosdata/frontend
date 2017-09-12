@@ -1,7 +1,7 @@
 .header {
   display:flex;
   align-items: center;
-  padding: 20px 0px 20px 25px;
+  padding: 10px 0px 10px 25px;
   background-color:yellow;
 }
 
@@ -18,10 +18,8 @@
 }
 
 .menu {
-  list-style-type: none;
-  margin:0;
-  padding:0;
-  background-color:green;
+  margin: 10px;
+  padding: 10px;
 }
 
 
@@ -30,14 +28,16 @@
 }
 
 .menu li img {
-  height: 40px;
-  padding:5px;
+  float: left;
+  height: 60px;
+  padding: 5px;
 }
 
 .tooltip {
+  display:flex;
   visibility:hidden;
-  width:120px;
-  top:60px;
+  width:230px;
+  top:115px;
   background-color: greenyellow;
   text-align:center;
   padding: 5px;
