@@ -1,19 +1,19 @@
-.header {
+.cabecalho {
   display:flex;
   align-items: center;
   padding: 10px 0px 10px 25px;
-  background-color:yellow;
+  background: linear-gradient(yellow, orange);
 }
 
-.descricao h1 {
+.descricao__titulo {
   font-size: 1.2em;
 }
 
-.descricao h2 {
+.descricao__copyright {
   font-family: monospace;
 }
 
-.descricao p {
+.descricao__texto {
   font-style: italic;
 }
 
@@ -22,18 +22,17 @@
   padding: 10px;
 }
 
-
-.menu li {
+.opcao {
   display:inline;
 }
 
-.menu li img {
+.opcao__icone {
   float: left;
   height: 60px;
   padding: 5px;
 }
 
-.tooltip {
+.opcao__dica {
   display:flex;
   visibility:hidden;
   width:230px;
@@ -46,10 +45,10 @@
   z-index:1;
 }
 
-.opcao:hover img {
+.opcao:hover .opcao__icone {
   background-color:greenyellow;
 }
 
-.opcao:hover .tooltip {
+.opcao:hover .opcao__dica {
   visibility:visible;
 }
