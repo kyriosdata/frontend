@@ -63,3 +63,7 @@ table {
 img, iframe, video, object {
   max-width: 100%;  
 }
+
+strong, b {
+  font-weight: bold;
+}
