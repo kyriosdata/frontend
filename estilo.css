@@ -34,6 +34,7 @@
 
 .opcao__dica {
   display:flex;
+  position:relative;
   visibility:hidden;
   width:240px;
   top:115px;
@@ -42,7 +43,6 @@
   padding: 5px;
   border-radius:5px;
   position:absolute;
-  z-index:1;
 }
 
 .opcao:hover .opcao__icone {
