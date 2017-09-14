@@ -30,11 +30,12 @@
   float: left;
   height: 60px;
   padding: 5px;
+  border-radius: 10px;
 }
 
 .opcao__dica {
   display:flex;
-  position:relative;
+  position:absolute;
   visibility:hidden;
   width:240px;
   top:115px;
@@ -42,7 +43,6 @@
   text-align:center;
   padding: 5px;
   border-radius:5px;
-  position:absolute;
 }
 
 .opcao:hover .opcao__icone {
