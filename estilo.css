@@ -1,3 +1,7 @@
+.doc {
+  display: none;
+}
+
 .cabecalho {
   display:flex;
   align-items: center;
