@@ -42,16 +42,22 @@
 }
 
 .opcao__dica {
-  display:flex;
+
   position:absolute;
-  top:115px;
-  
+  bottom:0;
+  right:0;
+  width:100%;
+  text-align:right;
   visibility:hidden;
-  width:240px;
   background-color: greenyellow;
-  text-align:center;
   padding: 5px;
   border-radius:5px;
+}
+
+.opcao__dica::before {
+  content: "Dica: ";
+  font-weight: bold;
+  white-space: pre;
 }
 
 .opcao:hover .opcao__icone {
