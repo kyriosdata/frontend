@@ -36,9 +36,10 @@
 .opcao__dica {
   display:flex;
   position:absolute;
+  top:115px;
+  
   visibility:hidden;
   width:240px;
-  top:115px;
   background-color: greenyellow;
   text-align:center;
   padding: 5px;
