@@ -37,6 +37,10 @@
   border-radius: 10px;
 }
 
+.espacar {
+  padding: 3px 7px;
+}
+
 .opcao__dica {
   display:flex;
   position:absolute;
