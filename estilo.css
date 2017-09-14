@@ -41,8 +41,11 @@
   padding: 3px 7px;
 }
 
-.opcao__dica {
+.espacar2 {
+  padding: 2px 3px;
+}
 
+.opcao__dica {
   position:absolute;
   bottom:0;
   right:0;
