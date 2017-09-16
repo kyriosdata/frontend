@@ -1,5 +1,5 @@
 .doc {
-  display: none;
+  display: block;
 }
 
 .cabecalho {
@@ -7,6 +7,13 @@
   align-items: center;
   padding: 10px 0px 10px 25px;
   background: linear-gradient(to top, yellow, orange);
+  position:fixed;
+  top:0;
+  width:100%;
+}
+
+body {
+  margin-top: 20px;
 }
 
 .descricao__titulo {
