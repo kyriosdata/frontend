@@ -1,8 +1,8 @@
 .cabecalho {
   display:flex;
   align-items: center;
-  padding: 10px 0px 10px 25px;
-  background: linear-gradient(to top, yellow, orange);
+  padding: 10px 20px 10px 25px;
+  background: linear-gradient(to top, white, yellow, orange);
   position:fixed;
   top:0;
   width:100%;
@@ -21,8 +21,7 @@
 }
 
 .menu {
-  margin: 10px;
-  padding: 10px;
+  padding: 20px;
 }
 
 .opcao {
@@ -53,7 +52,6 @@
   font-size:.8em;
   visibility:hidden;
   padding: 5px 15px 5px 5px;
-  border-radius:5px;
 }
 
 .opcao__dica::before {
