@@ -1,7 +1,3 @@
-.doc {
-  display: block;
-}
-
 .cabecalho {
   display:flex;
   align-items: center;
@@ -10,10 +6,6 @@
   position:fixed;
   top:0;
   width:100%;
-}
-
-body {
-  margin-top: 20px;
 }
 
 .descricao__titulo {
@@ -54,24 +46,25 @@ body {
 
 .opcao__dica {
   position:absolute;
-  bottom:0;
   right:0;
+  top:0;
   width:100%;
   text-align:right;
+  font-size:.8em;
   visibility:hidden;
-  background-color: greenyellow;
-  padding: 5px;
+  padding: 5px 15px 5px 5px;
   border-radius:5px;
 }
 
 .opcao__dica::before {
-  content: "Dica: ";
+  content: "dica ";
   font-weight: bold;
   white-space: pre;
+  font-size:.9em;
 }
 
 .opcao:hover .opcao__icone {
-  background-color:greenyellow;
+  background-color:yellow;
 }
 
 .opcao:hover .opcao__dica {
