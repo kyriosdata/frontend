@@ -8,7 +8,7 @@
 }
 
 .orientador ul {
-  background-color: #f1f1f1;
+  background: linear-gradient(to left, white, #bbb);
 }
 
 .orientador li a {
@@ -37,6 +37,19 @@
 #plano ul {
   margin-left: 30px;
   list-style-type: circle;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+ol li {
+  margin-bottom: 10px;
+}
+
+ol ul {
+  list-style-type: circle;
+  margin-left: 15px;
 }
 
 .cabecalho {
