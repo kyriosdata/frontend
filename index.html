@@ -59,7 +59,7 @@
       var correnteVisivel;
 
       window.onload = function() {
-        correnteVisivel = document.getElementById("programa");
+        correnteVisivel = document.getElementById("visao-geral");
         correnteVisivel.style.display = "block";
       }
 
@@ -90,6 +90,14 @@
         <li><a href="#contato" onclick="mostre('contato');">Contato</a></li>
       </ul>
     </footer>
+    
+    <div id="visao-geral">
+      <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRvXt9CnPSl4GsZxMfulkBjo_J_I7onVftuR-SMxTNxQHZg6QnZkjg1WjcxLT3vb9xmran7-SyjtDNd/embed?start=false&loop=false&delayms=60000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    </div>
+    
+    <div id="http">
+      <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTcO0LZirD1nzLUfvYgeZZB-CqdrTeMQpOQktBExvG4Tkh0vJ0yr-XvjaZp-4YDm3MZhZFQyDG62PVP/embed?start=true&loop=false&delayms=60000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    </div>
 
     <div id="plano">
       <h1>Fundamentos de Programação Front-End</h1>
@@ -122,9 +130,9 @@
       <ol>
         <li>[23/09/2017] <b>Curso</b>
           <ul>
-            <li>Visão geral</li>
-            <li>HTTP</li>
-            <li>Apresentação do trabalho prático proposto para avaliação da disciplina.</li>
+            <li><a href="#visao-geral" onclick="mostre('visao-geral');">Visão geral</a></li>
+            <li><a href="#http" onclick="mostre('http');">HTTP</a></li>
+            <li>Avaliação e trabalho prático da disciplina (<a href="https://docs.google.com/document/d/1ML_i92n_3RNTOfF8SlQzG-AofiTP8vSR2ye1iMvGCEk/edit?usp=sharing" target="_blanck">aqui</a>).</li>
             <li>Definição do trabalho prático a ser realizado como avaliação para cada estudante e/ou grupo.</li>
           </ul>
         </li>
@@ -162,7 +170,7 @@
       <p>Entre em contato com o time</p>
       <img src="http://images.financialexpress.com/2017/08/neymar-2.jpg">
     </div>
-
+    
   </div>
 
 

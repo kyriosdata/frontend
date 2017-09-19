@@ -23,7 +23,7 @@
   color: white;
 }
 
-#plano, #programa, #creditos, #contato {
+#plano, #programa, #creditos, #contato, #visao-geral, #http {
   margin: 0 10px 0 160px;
   display:none;
 }
