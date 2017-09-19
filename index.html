@@ -8,7 +8,7 @@
   <title>frontend</title>
 
   <meta name="author" content="Fábio Nogueira de Lucena">
-  
+
   <meta name="description" content="Fundamentos de Programação Front End (curso)">
 
   <meta name="subject" content="Explanações, dicas e muitos exemplos de uso de HTML, CSS e JavaScript">
@@ -53,31 +53,89 @@
       </li>
     </ul>
 
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+    <script>
+      var correnteVisivel;
+
+      window.onload = function() {
+        correnteVisivel = document.getElementById("plano");
+        correnteVisivel.style.display = "block";
+      }
+
+      function carregueEm(p, c) {
+        $(c).load(p);
+      }
+
+      function mostre(c) {
+        correnteVisivel.style.display = "none";
+
+        var exiba = document.getElementById(c);
+        exiba.style.display = "block";
+
+        correnteVisivel = exiba;
+      }
+
+    </script>
+
   </header>
-  
-  <footer class="rodape">
-    <ul>
-      <li><a href="plano.html">Plano</a></li>
-      <li><a href="programa.html">Programa</a></li>
-    </ul>
-  </footer>
-  
+
   <div class="conteudo">
-    <iframe class="doc" src="https://docs.google.com/document/d/e/2PACX-1vQvYe1v7Imyifim3ASIibF-psfsBwCIybp2r6l-ENO4LUk4xT01csOKvsTKt287D9aYyBjVcvAZhXAm/pub?embedded=true" width="960" height="569"></iframe>
 
-    <iframe class="doc" src="//www.slideshare.net/slideshow/embed_code/key/CkZoR52VyMgTpJ" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
-    <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/kyrios/fundamentos-de-programao-frontend" title="Fundamentos de Programação Front-End" target="_blank">Fundamentos de Programação Front-End</a> </strong> from <strong><a href="https://www.slideshare.net/kyrios" target="_blank">Fábio Nogueira de Lucena</a></strong> </div>
+    <footer class="orientador">
+      <ul>
+        <li><a href="#plano" onclick="mostre('plano');">Plano</a></li>
+        <li><a href="#programa" onclick="mostre('programa');">Programa</a></li>
+        <li><a href="#creditos" onclick="mostre('creditos');">Créditos</a></li>
+        <li><a href="#contato" onclick="mostre('contato');">Contato</a></li>
+      </ul>
+    </footer>
 
-    <iframe class="doc" src="//www.slideshare.net/slideshow/embed_code/key/zoC70HJwTQf12P" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
-    <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/kyrios/html5-primeiros-contatos-viso-geral" title="HTML5: Primeiros Contatos (visão geral)" target="_blank">HTML5: Primeiros Contatos (visão geral)</a> </strong> from <strong><a href="https://www.slideshare.net/kyrios" target="_blank">Fábio Nogueira de Lucena</a></strong> </div>
+    <div id="plano">
+      <h1>Fundamentos de Programação Front-End</h1>
 
-    <iframe class="doc" src="//www.slideshare.net/slideshow/embed_code/key/Bs2X6n4l7qfrSK" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
-    <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/kyrios/css-tudo-o-que-voc-precisa-saber" title="CSS: Tudo o que você precisa saber" target="_blank">CSS: Tudo o que você precisa saber</a> </strong> from <strong><a href="https://www.slideshare.net/kyrios" target="_blank">Fábio Nogueira de Lucena</a></strong> </div>
+      <h2>Encontros:</h2>
+      <ul>
+        <li>23/09/2017 (8h–12h, 13h–17h)</li>
+        <li>30/09/2017 (8h–12h, 13h–17h)</li>
+        <li>21/10/2017 (8h–12h, 13h–17h)</li>
+        <li>04/11/2017 (8h–12h, 13h–17h)</li>
+      </ul>
 
-    <iframe class="doc" src="//www.slideshare.net/slideshow/embed_code/key/bgJzKyGuDIsJAE" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
-    <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/secret/bgJzKyGuDIsJAE" title="JavaScript: Aprendendo a programar" target="_blank">JavaScript: Aprendendo a programar</a> </strong> from <strong><a href="https://www.slideshare.net/kyrios" target="_blank">Fábio Nogueira de Lucena</a></strong> </div>
+      <h2>Ementa:</h2>
+      <p>Os fundamentos de HMTL, recomendações da W3C, semântica e acessibilidade. Aplicação de estilos com CSS: formatação de tags, utilização com HTML, seletores, herança, cores e gradiente. Padrões de nomenclaturas para organizar o CSS: BEM (Block, Element, Modifier), herança, etc. Técnicas de design responsivo. JavaScript (tipos de Dados – variáveis, strings, arrays, objetos, verificação de valores, JSON; controle de fluxo – estruturas de decisão, estruturas de repetição, funções; encapsulamento, controle de evento, processamento de arrays e manipulação de DOM).</p>
 
-  </div>    
+      <h2>Metodologia:</h2>
+      <p>Pequeno percentual de horas aulas teóricas expositivas para apresentação do conhecimento relevante e ênfase para realização de exercícios e atividades práticas em laboratório para aprendizagem e fixação dos conhecimentos importantes sobre programação front-end. O conhecimento deve ser aplicado para modelar e implementar elementos que executam e são persistidos em servidores de aplicações ou sistemas de informação. O estudo de caso definido no início do curso deverá ser utilizado para desenvolver os trabalhos da disciplina. </p>
+
+      <h2>Bibliografia básica:</h2>
+      <ul>
+        <li>W3C. HTML: The Markup Language (an HTML language reference). 2013. Disponível em <a href="https://www.w3.org/TR/html-markup">https://www.w3.org/TR/html-markup</a>.
+        </li>
+        <li>W3C. Cascading Style Sheets - Articles and Tutorials. Disponível em <a href="https://www.w3.org/Style/CSS/learning">https://www.w3.org/Style/CSS/learning</a> </li>
+        <li>MDN. JavaScript Reference. Disponível em <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference</a> </li>
+        <li>W3School. JavaScript and HTML DOM Reference. Disponível em <a href="http://www.w3schools.com/jsref/">http://www.w3schools.com/jsref/</a></li>
+      </ul>
+    </div>
+
+    <div id="programa">
+      PROGRAMA.
+    </div>
+
+    <div id="creditos">
+      <h1>Fábio Nogueira de Lucena</h1>
+      <p> Onde foi parar o texto?</p>
+      <p>Instituto de Informática (UFG)</p>
+      <img src="https://cdn-s3.si.com/s3fs-public/styles/marquee_large_2x/public/2017/08/04/neymar-psg-jersey-paris.jpg">
+    </div>
+
+    <div id="contato">
+      <p>Entre em contato com o time</p>
+      <img src="http://images.financialexpress.com/2017/08/neymar-2.jpg">
+    </div>
+
+  </div>
+
 
 </body>
 

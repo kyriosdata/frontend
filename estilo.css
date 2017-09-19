@@ -1,5 +1,42 @@
-.rodape {
+.conteudo {
   margin-top:120px;
+}
+
+.orientador {
+  float:left;
+  width:140px;  
+}
+
+.orientador ul {
+  background-color: #f1f1f1;
+}
+
+.orientador li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.orientador li a:hover {
+  background-color: #555;
+  color: white;
+}
+
+#plano, #programa, #creditos, #contato {
+  margin: 0 10px 0 160px;
+  display:none;
+}
+
+#plano h1, #plano h2 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#plano ul {
+  margin-left: 30px;
+  list-style-type: circle;
 }
 
 .cabecalho {
