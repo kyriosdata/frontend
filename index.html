@@ -21,7 +21,7 @@
   <link rel="stylesheet" type="text/css" href="estilo.css">
 </head>
 
-<body>
+<body onhashchange="changeToUrl()">
   <header class="cabecalho">
 
     <div class="descricao">
@@ -61,12 +61,17 @@
       var correnteVisivel;
 
       window.onload = function() {
-        correnteVisivel = document.getElementById("visao-geral");
+        correnteVisivel = document.getElementById("plano");
         correnteVisivel.style.display = "block";
       }
 
       function carregueEm(p, c) {
         $(c).load(p);
+      }
+      
+      function changeToUrl() {
+        var goTo = location.hash.substring(1);
+        mostre( goTo ? goTo : "plano");
       }
 
       function mostre(c) {
@@ -86,9 +91,9 @@
 
     <footer class="orientador">
       <ul>
-        <li><a href="#" onclick="mostre('plano');"><i class="fa fa-book fa-fw" aria-hidden="true"></i>&nbsp; Plano</a></li>
-        <li><a href="#" onclick="mostre('programa');"><i class="fa fa-info fa-fw" aria-hidden="true"></i>&nbsp; Programa</a></li>
-        <li><a href="#" onclick="mostre('creditos');"><i class="fa fa-address-card-o fa-fw" aria-hidden="true"></i>&nbsp; Créditos</a></li>
+        <li><a href="#plano" onclick="mostre('plano');"><i class="fa fa-book fa-fw" aria-hidden="true"></i>&nbsp; Plano</a></li>
+        <li><a href="#programa" onclick="mostre('programa');"><i class="fa fa-info fa-fw" aria-hidden="true"></i>&nbsp; Programa</a></li>
+        <li><a href="#creditos" onclick="mostre('creditos');"><i class="fa fa-address-card-o fa-fw" aria-hidden="true"></i>&nbsp; Créditos</a></li>
       </ul>
     </footer>
     
