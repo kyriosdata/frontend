@@ -5,12 +5,8 @@
 .orientador {
   float:left;
   width:140px;  
-  border: 1px solid lightgray;
+  border-top: 1px solid lightgray;
   margin-left: 10px;
-}
-
-.orientador ul {
-  background: linear-gradient(to left, white, #eee);
 }
 
 .orientador li a {
