@@ -15,7 +15,7 @@
 
   <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
   <link rel="icon" href="favicon.png" type="image/x-icon">
-  
+
   <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="reset.css">
   <link rel="stylesheet" type="text/css" href="estilo.css">
@@ -32,8 +32,7 @@
 
     <ul class="menu">
       <li class="opcao">
-        <a href="forms/f02.html"><img class="opcao__icone" src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Google_docs.png" alt="Ícone para plano">
-        </a>
+        <a href="forms/f02.html"><i class="opcao__icone fa fa-home fa-3x"></i></a>
         <div class="opcao__dica">Documentação do curso.</div>
       </li>
 
@@ -58,20 +57,27 @@
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
     <script>
+      document.onreadystatechange = function() {
+        var state = document.readyState
+        if (state == 'complete') {
+            document.getElementById('loading').style.visibility = "hidden";
+        }
+      }
+
       var correnteVisivel;
 
       window.onload = function() {
-        correnteVisivel = document.getElementById("plano");
+        correnteVisivel = document.getElementById("home");
         correnteVisivel.style.display = "block";
       }
 
       function carregueEm(p, c) {
         $(c).load(p);
       }
-      
+
       function changeToUrl() {
         var goTo = location.hash.substring(1);
-        mostre( goTo ? goTo : "plano");
+        mostre(goTo ? goTo : "home");
       }
 
       function mostre(c) {
@@ -82,7 +88,6 @@
 
         correnteVisivel = exiba;
       }
-
     </script>
 
   </header>
@@ -91,25 +96,29 @@
 
     <footer class="orientador">
       <ul>
-        <li><a href="#plano" onclick="mostre('plano');"><i class="fa fa-book fa-fw" aria-hidden="true"></i>&nbsp; Plano</a></li>
+        <li><a href="#home"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp; Home</a></li>
         <li><a href="#programa" onclick="mostre('programa');"><i class="fa fa-info fa-fw" aria-hidden="true"></i>&nbsp; Programa</a></li>
         <li><a href="#creditos" onclick="mostre('creditos');"><i class="fa fa-address-card-o fa-fw" aria-hidden="true"></i>&nbsp; Créditos</a></li>
       </ul>
     </footer>
-    
+
     <div id="visao-geral">
       <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRvXt9CnPSl4GsZxMfulkBjo_J_I7onVftuR-SMxTNxQHZg6QnZkjg1WjcxLT3vb9xmran7-SyjtDNd/embed?start=false&loop=false&delayms=60000" width="960" height="569" allowfullscreen></iframe>
     </div>
-    
+
     <div id="http">
       <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTcO0LZirD1nzLUfvYgeZZB-CqdrTeMQpOQktBExvG4Tkh0vJ0yr-XvjaZp-4YDm3MZhZFQyDG62PVP/embed?start=true&loop=false&delayms=60000" width="960" height="569" allowfullscreen></iframe>
     </div>
-    
+
     <div id="html">
-      <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQGGxiljMT-bAdeoQrDOTblp8YoN0z24PL-PuthNp0ENzT2RrCx_iMC2Vweisq_M_QWSrGdM8pxF91u/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen></iframe>      
+      <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQGGxiljMT-bAdeoQrDOTblp8YoN0z24PL-PuthNp0ENzT2RrCx_iMC2Vweisq_M_QWSrGdM8pxF91u/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen></iframe>
     </div>
 
-    <div id="plano">
+    <div id="loading">
+      <i class="fa fa-spinner fa-pulse fa-5x"></i>
+    </div>
+
+    <div id="home">
       <h1>Fundamentos de Programação Front-End</h1>
 
       <h2>Encontros:</h2>
@@ -140,11 +149,11 @@
       <ol>
         <li>[23/09/2017] <b>Curso</b>
           <ul>
-            <li>Apresentar o <a href="#plano" onclick="mostre('plano');">plano</a>.</li>
+            <li>Apresentar o <a href="#home" onclick="mostre('home');">plano</a>.</li>
             <li>Avaliação e trabalho prático da disciplina (<a href="https://goo.gl/zrAaEj" target="_blank">aqui</a>).</li>
             <li>Definição do trabalho prático a ser realizado como avaliação para cada estudante e/ou grupo.</li>
             <li><a href="#visao-geral" onclick="mostre('visao-geral');">Visão geral</a></li>
-            <li><a href="#http" onclick="mostre('http');">HTTP</a></li>            
+            <li><a href="#http" onclick="mostre('http');">HTTP</a></li>
           </ul>
         </li>
         <li>[23/09/2017] <b>HTML</b> (<a href="#html">slides <i class="fa fa-link" aria-hidden="true"></i></a>)
@@ -174,7 +183,7 @@
       <p>Fábio Nogueira de Lucena é professor do Instituto de Informática da UFG.</p>
       <p><i class="fa fa-github fa-fw" aria-hidden="true"></i> Este portal está disponível no repositório <a href="https://github.com/kyriosdata/frontend" target="_blank">frontend</a> no Github.</p>
     </div>
-    
+
   </div>
 
 
