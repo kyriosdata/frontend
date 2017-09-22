@@ -28,10 +28,14 @@
 }
 
 .atencao {
-  width: 150px;
-  margin-left: auto;
+  padding: 20px;
+  width: 250px;
   border-radius: 5px;
   background-color: yellow;
+}
+
+.atencao p {
+  display: inline;
 }
 
 #loading{
