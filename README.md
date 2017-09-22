@@ -1,2 +1,2 @@
 # frontend
-Conteúdo para o desenvolvimento de código para web (front-end)
+Portal do curso **Fundamentos de Programação Front-End**.
