@@ -22,9 +22,16 @@
   color: white;
 }
 
-#home, #programa, #creditos, #contato, #visao-geral, #http, #html {
+#home, #programa, #creditos, #contato, #visao-geral, #http, #html, #css, #javascript, .atencao {
   margin: 0 10px 0 180px;
   display:none;
+}
+
+.atencao {
+  width: 150px;
+  margin-left: auto;
+  border-radius: 5px;
+  background-color: yellow;
 }
 
 #loading{
