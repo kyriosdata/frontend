@@ -72,7 +72,8 @@
       }
 
       function carregueEm(p, c) {
-        $(c).load(p);
+        $(p).load(c);
+        console.log(p +' ' + c);
       }
 
       function changeToUrl() {
@@ -179,9 +180,11 @@
 
     </div>
 
-    <div id="creditos">
+    <div onclick="carregueEm('#ip', 'https://httpbin.org/ip');" id="creditos">
       <p>Fábio Nogueira de Lucena é professor do Instituto de Informática da UFG.</p>
       <p><i class="fa fa-github fa-fw" aria-hidden="true"></i> Este portal está disponível no repositório <a href="https://github.com/kyriosdata/frontend" target="_blank">frontend</a> no Github.</p>
+      
+      <p id="ip">Clique aqui para ver o IP do qual estão sendo feitas requisições!</p>
     </div>
 
     <div id="css" class="atencao">
