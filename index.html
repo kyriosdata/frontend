@@ -9,7 +9,7 @@
 
   <meta name="author" content="Fábio Nogueira de Lucena">
 
-  <meta name="description" content="Fundamentos de Programação Front End (curso)">
+  <meta name="description" content="Portal do curso Fundamentos de Programação Front End">
 
   <meta name="subject" content="Explanações, dicas e muitos exemplos de uso de HTML, CSS e JavaScript">
 
@@ -73,9 +73,10 @@
 
       function carregueEm(p, c) {
         $(p).load(c);
-        console.log(p +' ' + c);
+        console.log(p + ' ' + c);
       }
 
+      <!-- body onhashchange -->
       function changeToUrl() {
         var goTo = location.hash.substring(1);
         mostre(goTo ? goTo : "home");
@@ -184,7 +185,7 @@
     <div onclick="carregueEm('#ip', 'https://httpbin.org/ip');" id="creditos">
       <p>Fábio Nogueira de Lucena é professor do Instituto de Informática da UFG.</p>
       <p><i class="fa fa-github fa-fw" aria-hidden="true"></i> Este portal está disponível no repositório <a href="https://github.com/kyriosdata/frontend" target="_blank">frontend</a> no Github.</p>
-      
+
       <p id="ip">Clique aqui para ver o IP do qual estão sendo feitas requisições!</p>
     </div>
 
@@ -197,7 +198,7 @@
       <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
       <p>Ainda não disponibilizado.</p>
     </div>
-    
+
     <div id="exemplos">
       <ol>
         <li><a href="exemplos/index.html" target="_blank">Exemplo 1</a></li>

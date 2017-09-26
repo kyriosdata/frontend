@@ -22,7 +22,7 @@
   color: white;
 }
 
-#home, #programa, #creditos, #contato, #visao-geral, #http, #html, #css, #javascript, .atencao {
+#home, #programa, #creditos, #contato, #visao-geral, #http, #html, #css, #javascript, #exemplos, .atencao {
   margin: 0 10px 0 180px;
   display:none;
 }
