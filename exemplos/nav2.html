@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      /* Elimina margem */
+      margin: 0;
+      /* Destaca restante do body como cinza */
+      background-color: lightgray;
+    }
+    
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: block;
+      background-color: yellow;
+      
+      /* Quase mágica para mim */
+      overflow: hidden;
+    }
+    
+    li {
+      float: right;
+    }
+    
+    a,
+    .dropbtn {
+      display: block;
+      color: black;
+      padding: 16px;
+      text-decoration: none;
+    }
+    
+    /* opção sob o cursor é destacada na barra principal */
+    li a:hover {
+      background-color: blue;
+      color: white;
+    }
+    
+    /* Como manter a opção principal "marcada"? */
+    /* quando se está sob opção principal mantê-la conforme desejado */
+    /* cor verde usada apenas para facilitar a identificação da regra */
+    .dropdown:hover .dropbtn {
+      
+      /* substituir por blue para efeito "correto" */
+      background-color: green;
+      color:white;
+    }
+    
+    li.dropdown {
+      display: inline-block;
+    }
+    
+    .dropdown-content {
+      /* observe que não é exibido */
+      display: none;
+      position: absolute;
+      background-color: white;            
+    }
+    
+    /* destaca opção do sub-menu sob o cursor */
+    .dropdown-content a:hover {
+      background-color: black;
+      color: white;
+    }
+    
+    /* exibe sub-menu apenas quando sob cursor */
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <ul>
+    <li><a href="http://www.ufg.br">UFG</a></li>
+    <li><a href="http://www.inf.ufg.br">INF</a></li>
+    <li class="dropdown">
+      <a href="#" class="dropbtn">Computação</a>
+      <div class="dropdown-content">
+        <a href="#">Ciência da Computação</a>
+        <a href="#">Engenharia de Software</a>
+        <a href="#">Sistemas de Informação</a>
+      </div>
+    </li>
+  </ul>
+</body>
+</html>
