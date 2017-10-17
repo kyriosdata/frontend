@@ -54,8 +54,6 @@
       </li>
     </ul>
 
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-
     <script>
       document.onreadystatechange = function() {
         var state = document.readyState
@@ -71,23 +69,18 @@
         correnteVisivel.style.display = "block";
       }
 
-      /* carregueEm('#ip', 'https://httpbin.org/ip') */
-      function carregueEm(p, c) {
-        $(p).load(c);
-        console.log(p + ' ' + c);
-      }
-      
-      function ip() {
-        var req = new XMLHttpRequest();
-        req.onreadystatechange = function() {
-          if (this.readyState == 4 && this.status == 200) {
-            document.getElementById("demo").innerHTML = this.responseText;
-          }
-        };
-        
-        req.open("GET", "x.txt", true);
-        req.send();
-      }
+      function ip(elemento) {
+      var req = new XMLHttpRequest();
+      req.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          var answer = JSON.parse(this.responseText);
+          document.getElementById(elemento).innerHTML = answer.origin;
+        }
+      };
+
+      req.open("GET", "https://httpbin.org/ip", true);
+      req.send();
+    }
 
       <!-- body onhashchange -->
       function changeToUrl() {
@@ -195,11 +188,9 @@
 
     </div>
 
-    <div onclick="carregueEm('#ip', 'https://httpbin.org/ip');" id="creditos">
+    <div id="creditos">
       <p>Fábio Nogueira de Lucena é professor do Instituto de Informática da UFG.</p>
       <p><i class="fa fa-github fa-fw" aria-hidden="true"></i> Este portal está disponível no repositório <a href="https://github.com/kyriosdata/frontend" target="_blank">frontend</a> no Github.</p>
-
-      <p id="ip">Clique aqui para ver o IP do qual estão sendo feitas requisições!</p>
     </div>
 
     <div id="css" class="atencao">
