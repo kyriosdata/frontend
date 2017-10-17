@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercício</title>
+</head>
+<style>
+  nav {
+    background-color: white;
+  }
+  
+  figure {
+    margin: 0;
+    position: absolute;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;    
+    float: right;
+  }
+  
+  li {
+    float: left;    
+    padding: 18px;
+    border-left: 1px solid lightgray;
+  }
+  
+  li:first-child {
+    border-left: none;
+  }
+  
+  li:hover {
+    background-color: orange;
+  }
+  
+  li:hover>a {
+    color: white;
+  }
+  
+  a {    
+    text-decoration: none;
+  }
+  
+  body {
+    margin: 0;
+    background-color: lightgray;
+  }
+  
+  .grouping::after,
+  .grouping::before {
+    content: " ";
+    display: table;
+  }
+  
+  .grouping::after {
+    clear: both;
+  }
+</style>
+
+<body>
+  <nav class="grouping">
+    <figure>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Go-home.svg/2000px-Go-home.svg.png" width="75px" alt="">
+    </figure>
+          <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Ajuda</a></li>
+        <li><a href="#">Teste</a></li>
+        <li><a href="#">Sair</a></li>
+      </ul>
+  </nav>
+</body>
+</html>
