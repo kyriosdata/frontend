@@ -5,15 +5,27 @@
   <title>Document</title>
   <style>
     img {
-      max-width: 100%;
+      max-width: 350px;
+      float:left;
+      margin-right: 10px;
+    }
+    
+    /* Para tela de 800px ou menor a imagem deve ocupar 50% da tela */
+    @media screen and (max-width: 800px) {
+      img {
+        max-width: 50%;
+      }
     }
   </style>
 </head>
 
 <body>
- <p>Imagem de 1920x1280 pixels exibida de forma redimensionável. Experimente!</p>
+ <h1>Minha página preferida</h1>
  
-  <figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Wei%C3%9Fr%C3%BCckengeier_Gyps_africanus_HP_L2043.JPG/1920px-Wei%C3%9Fr%C3%BCckengeier_Gyps_africanus_HP_L2043.JPG" alt="aves em árvore"></figure>
+  <figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Wei%C3%9Fr%C3%BCckengeier_Gyps_africanus_HP_L2043.JPG/1920px-Wei%C3%9Fr%C3%BCckengeier_Gyps_africanus_HP_L2043.JPG" alt="aves em árvore">
+  
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio ratione perspiciatis facere nemo facilis est mollitia sint eum temporibus tempore fuga magnam veniam, ab fugiat officiis, vero alias quas et itaque iure molestiae saepe. Ullam nesciunt deleniti eos praesentium ipsam nostrum molestias possimus adipisci, voluptatibus accusamus repellendus, illo dignissimos repudiandae.</p>
+  </figure>
 
 </body>
 </html>
