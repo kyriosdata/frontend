@@ -103,7 +103,7 @@ ol ul {
 
 .opcao__icone {
   float: left;
-  height: 60px;
+  max-height: 60px;
   padding: 5px;
   border-radius: 10px;
 }
