@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    function ip(elemento) {
+      var req = new XMLHttpRequest();
+      req.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          var answer = JSON.parse(this.responseText);
+          document.getElementById(elemento).innerHTML = answer.origin;
+        }
+      };
+
+      req.open("GET", "https://httpbin.org/ip", true);
+      req.send();
+    }
+  </script>
+  
+  <h1>Qual é o meu IP?</h1>
+  
+  <p>Pressione <a href="#" onclick="ip('resposta')">aqui</a> para saber!</p>
+  
+  <p>Resposta: <span id="resposta"></span></p>
+
+</body>
+</html>
