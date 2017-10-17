@@ -71,9 +71,22 @@
         correnteVisivel.style.display = "block";
       }
 
+      /* carregueEm('#ip', 'https://httpbin.org/ip') */
       function carregueEm(p, c) {
         $(p).load(c);
         console.log(p + ' ' + c);
+      }
+      
+      function ip() {
+        var req = new XMLHttpRequest();
+        req.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("demo").innerHTML = this.responseText;
+          }
+        };
+        
+        req.open("GET", "x.txt", true);
+        req.send();
       }
 
       <!-- body onhashchange -->
