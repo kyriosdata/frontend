@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercício</title>
+</head>
+<style>
+  nav {
+    background-color: white;
+    position: fixed;
+    left:0;
+    right:0;
+    top:0;
+  }
+  
+  figure {
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left:0;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;    
+    float: right;
+  }
+  
+  li {
+    float: left;    
+    padding: 18px;
+    border-left: 1px solid lightgray;
+  }
+  
+  li:first-child {
+    border-left: none;
+  }
+  
+  li:hover {
+    background-color: orange;
+  }
+  
+  li:hover>a {
+    color: white;
+  }
+  
+  a {    
+    text-decoration: none;
+  }
+  
+  body {
+    margin: 0;
+    background-color: lightgray;
+  }
+  
+  .grouping::after,
+  .grouping::before {
+    content: " ";
+    display: table;
+  }
+  
+  .grouping::after {
+    clear: both;
+  }
+  
+  section {
+    margin-top: 80px;
+  }
+</style>
+
+<body>
+  <nav class="grouping">
+    <figure>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Go-home.svg/2000px-Go-home.svg.png" width="75px" alt="">
+    </figure>
+          <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Ajuda</a></li>
+        <li><a href="#">Teste</a></li>
+        <li><a href="#">Sair</a></li>
+      </ul>
+  </nav>
+  
+  <section>
+    <h1>Meu título</h1>
+  
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo placeat laudantium quas at adipisci in quisquam quibusdam sed est, qui, voluptatem et blanditiis, doloribus nemo!</p>
+  
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias officiis nobis repudiandae dolores, praesentium exercitationem. Odit nulla, provident cum iure.</p>
+  <p>Illum excepturi, necessitatibus, ipsa recusandae harum sequi. Culpa dolorum fugit temporibus earum saepe dolor autem omnis, ea, quibusdam obcaecati hic.</p>
+  <p>Delectus similique ipsum dignissimos ab consequuntur, ratione enim, voluptates perferendis dolore ut asperiores. Fuga totam, id esse vero, quisquam tenetur.</p>
+  <p>Adipisci ipsam minus pariatur quidem? Consequatur beatae illo, veniam esse asperiores aperiam ratione doloremque, blanditiis, cumque minima dolorem mollitia nam.</p>
+  <p>Ab quaerat, tempora rerum fuga aliquid adipisci porro quidem quibusdam, doloremque, ducimus deleniti delectus perspiciatis eius repudiandae incidunt sed sunt.</p>
+  <p>Quod quas ducimus, tenetur maiores non velit sit sint fugiat. Aspernatur quos ipsam eligendi hic dolorem incidunt sint nulla, neque!</p>
+  <p>Quidem, reprehenderit. Quisquam ab repellat maxime deserunt deleniti cupiditate necessitatibus nobis reprehenderit, ea iure, rem quod facilis vel veritatis doloribus!</p>
+  <p>Adipisci earum excepturi dolorum rem cupiditate, porro pariatur velit tempore magni dolorem vero quod voluptates necessitatibus eligendi quos eius suscipit!</p>
+  <p>Perferendis nam voluptates repudiandae pariatur dicta asperiores, dignissimos in, id rem nemo, ea. Est officiis officia, voluptate aut facilis nostrum.</p>
+  <p>Blanditiis dolore accusamus expedita nostrum hic facere amet, quas illo, tenetur adipisci alias, numquam cumque deleniti sunt impedit tempore sed.</p>
+  </section>
+</body>
+</html>
