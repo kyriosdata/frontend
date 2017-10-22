@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hello Bulma!</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../bulma.css">
+  <style>
+      #final {
+      display: none;
+  </style>
+</head>
+
+<body>
+  <script>
+    function hideLoading() {
+      const hl = document.getElementById('loading-img');
+      hl.style.display = "none";
+      
+      const fl = document.getElementById('final');
+      fl.style.display = "block";
+    }
+  </script>
+
+  <section class="section">
+    <div class="container">
+      <h1 class="title">
+        Imagem
+      </h1>
+      <p class="subtitle">
+        Imagem exibida apenas quando completamente carregada.
+      </p>
+
+      <span id="loading-img" class="icon">
+         <i class="fa fa-cog fa-spin"></i>     
+      </span>
+
+      <figure><img id="final" src="http://photojournal.jpl.nasa.gov/jpeg/PIA16114.jpg" alt="" onload="hideLoading()"></figure>
+      
+    </div>
+  </section>
+
+
+</body>
+</html>
