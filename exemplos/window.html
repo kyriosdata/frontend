@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Window</title>
+</head>
+
+<body>
+  <div id="k">Redimensione a janela.</div>
+  <script>
+    
+    function getDados() {
+      var saida = "Height da janela: " + window.innerHeight;
+      
+      saida += "<br>Width da janela: " + window.innerWidth;
+      
+      return saida;
+    }
+        
+    window.onresize = function() {
+      var d = document.getElementById('k');
+      d.innerHTML = getDados();
+    };
+  </script>
+</body>
+</html>
