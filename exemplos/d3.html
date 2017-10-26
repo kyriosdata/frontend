@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+
+<head>
+  <link rel="stylesheet" href="grafo.css">
+  <style>
+    .links line {
+      stroke: #999;
+      stroke-opacity: 0.6;
+    }
+    
+    .nodes circle {
+      stroke: #fff;
+      stroke-width: 1.5px;
+    }
+    
+    #grafo {
+      width: "960px";
+      height: 500px;
+      margin: auto;
+      margin-bottom: 12px;
+    }
+    
+    #grafo svg {
+      border: 1px solid;
+      font: 13px sans-serif;
+      text-anchor: end;
+    }
+    
+    #grafo .node {
+      stroke: #fff;
+      stroke-width: 1.5px;
+    }
+    
+    .node .selected {
+      stroke: black;
+    }
+    
+    .link {
+      stroke: #999;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Bacharelado em Engenharia de Software</h1>
+
+  <div align="center" id="grafo">
+    <svg></svg>
+  </div>
+
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="d3-brush.js"></script>
+  <script src="d3-selectable.js"></script>
+  <script>
+    var svg = d3.select("#grafo");
+    
+    d3.json("d3.json", function(error, graph) {
+      if (error) {
+        alert('houve erro');
+        throw error;
+      }
+
+      geraGrafo(svg, graph);
+      
+    });
+  </script>
+</body>
+
+</html>
