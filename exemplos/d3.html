@@ -3,23 +3,26 @@
 <html>
 
 <head>
-  <link rel="stylesheet" href="grafo.css">
+ <link href="https://fonts.googleapis.com/css?family=Merriweather|Nunito" rel="stylesheet">
   <style>
-    .links line {
-      stroke: #999;
-      stroke-opacity: 0.6;
+    section.header {
+      width: 80%;
+      margin: auto;
+    }
+    h1 {
+      font-family: 'Merriweather', serif;
     }
     
-    .nodes circle {
-      stroke: #fff;
-      stroke-width: 1.5px;
+    p {
+      font-family: 'Nunito', sans-serif;
     }
     
     #grafo {
-      width: "960px";
+      width: 80%;
       height: 500px;
-      margin: auto;
       margin-bottom: 12px;
+      margin-left: auto;
+      margin-right: auto;
     }
     
     #grafo svg {
@@ -40,15 +43,37 @@
     .link {
       stroke: #999;
     }
+    
+    .tarefas {
+      border: 1px solid red;
+      margin-bottom: 10px;
+    }
+    
   </style>
 </head>
 
 <body>
-  <h1>Bacharelado em Engenharia de Software</h1>
+  <section class="header">
+    <h1>Bacharelado em Engenharia de Software</h1>
+  <p>Esta é uma ferramenta para "dominar" o projeto pedagógico do curso de Bacharelado em Engenharia de Software do Instituto de Informática (UFG).</p>
+  </section>
 
-  <div align="center" id="grafo">
+  <div id="grafo">
     <svg></svg>
   </div>
+  
+  <div class="detalhes">
+    <span id="tipo" class="tipo">o tipo</span>
+    <span id="tipo-valor" class="tipo-valor">o valor do nó</span>
+  </div>
+  
+  <section class="tarefas">
+   Lista de user stories a serem implementadas, se houver ...
+    <ul>
+     <li>Como usuário eu quero que seja indicado o nóme do nó sob o mouse e as relações desse com os demais, em área própria, para que facilite a minha navegação pelo ppc.</li>
+      <li>Como usuário eu quero selecionar um nó e restringir a visualização apenas ao subgrafo formado pelo nó selecionado e os adjacentes para eu compreender melhor a relação do nó selecionado.</li>
+    </ul>
+  </section>
 
   <script src="https://d3js.org/d3.v4.min.js"></script>
   <script src="d3-brush.js"></script>
