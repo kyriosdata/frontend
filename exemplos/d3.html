@@ -9,12 +9,21 @@
       width: 80%;
       margin: auto;
     }
+        
+    section.tarefas {
+      margin-top: 50px;
+      border: 1px solid red;
+      margin-bottom: 10px;
+    }
+
     h1 {
       font-family: 'Merriweather', serif;
+      font-size: 2.5em;
     }
     
     p {
       font-family: 'Nunito', sans-serif;
+      font-size: 1.3em
     }
     
     #grafo {
@@ -42,20 +51,14 @@
     
     .link {
       stroke: #999;
-    }
-    
-    .tarefas {
-      border: 1px solid red;
-      margin-bottom: 10px;
-    }
-    
+    }    
   </style>
 </head>
 
 <body>
   <section class="header">
     <h1>Bacharelado em Engenharia de Software</h1>
-  <p>Esta é uma ferramenta para "dominar" o projeto pedagógico do curso de Bacharelado em Engenharia de Software do Instituto de Informática (UFG).</p>
+  <p>Se você deseja conhecer um pouco mais o Bacharelado em Engenharia de Software do Instituto de Informática (UFG), então essa é uma ferramenta para você. </p>
   </section>
 
   <div id="grafo">
@@ -72,6 +75,8 @@
     <ul>
      <li>Como usuário eu quero que seja indicado o nóme do nó sob o mouse e as relações desse com os demais, em área própria, para que facilite a minha navegação pelo ppc.</li>
       <li>Como usuário eu quero selecionar um nó e restringir a visualização apenas ao subgrafo formado pelo nó selecionado e os adjacentes para eu compreender melhor a relação do nó selecionado.</li>
+      <li>Como usuário eu quero digitar uma palavra e visualizar quais os nós que contém a palavra digitada para facilitar a localização de informação de interesse.</li>
+      <li>Como usuário eu desejo selecionar o tipo de nó e o tipo de aresta exibido e, dessa forma, visualizar apenas o subgrafo resultante da união dos elementos selecionados.</li>
     </ul>
   </section>
 
