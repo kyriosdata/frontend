@@ -1,7 +1,4 @@
 function geraGrafo(svg, graph) {
-    // if both d3v3 and d3v4 are loaded, we'll assume
-    // that d3v4 is called d3v4, otherwise we'll assume
-    // that d3v4 is the default (d3)
     if (typeof d3v4 == 'undefined')
         d3v4 = d3;
 
@@ -39,11 +36,6 @@ function geraGrafo(svg, graph) {
     }
 
     var color = d3v4.scaleOrdinal(d3v4.schemeCategory20);
-
-    if (! ("links" in graph)) {
-        console.log("Graph is missing links");
-        return;
-    }
 
     var nodes = {};
     var i;
