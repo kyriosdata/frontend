@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Classe</title>
+</head>
+
+<body>
+  <script>
+    class Retangulo {
+      constructor(largura, altura) {
+        this.altura = altura;
+        this.largura = largura;
+      }
+      
+      area() {
+        let calculo = this.altura * this.largura;
+        return 'Área de retângulo de ' + this.altura + "x" + this.largura + " é " + calculo;
+      }
+    }
+
+    function faz() {
+      var r = new Retangulo(10, 5);
+      var area = r.area();
+      
+      let x = document.getElementById('s');
+      x.innerHTML = area;
+    }
+  </script>
+
+  <input type="button" name="acao" value="Área" onclick="faz()">
+  <span id="s"></span>
+</body>
+
+</html>
