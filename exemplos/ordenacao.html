@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Classe</title>
+</head>
+
+<body>
+  <p id="nome">Nomes</p>
+  <p id="idade">Idades</p>
+  <script>
+    class Pessoa {
+      constructor(n, i) {
+        this.n = n;
+        this.i = i;
+      }
+
+      toString() {
+        return this.n + ' (' + this.i + ')';
+      }
+    }
+    var pessoas = [new Pessoa('José', 25), new Pessoa('Pedro', 5)];
+    pessoas.sort(function(a, b) {
+      return a.n - b.n;
+    });
+    
+    document.getElementById('nome').innerHTML = pessoas;
+
+    pessoas.sort(function(a, b) {
+      return a.i - b.i;
+    });
+    document.getElementById('idade').innerHTML = pessoas;
+  </script>
+</body>
+
+</html>
