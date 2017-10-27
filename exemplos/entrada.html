@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Classe</title>
+</head>
+
+<body>
+  <script>
+    function valor(e) {
+      return document.getElementById(e).value;
+    }
+    
+    function atualiza() {
+      var k = document.getElementById('texto');
+      k.style.fontSize = valor('size') + "px";
+    }
+  </script>
+
+  <label for="size">Tamanho da fonte</label>
+  <input type="number" id="size" name="size" value="10" oninput="atualiza()">
+  <br>
+  <span style="font-size:10px;" id="texto">Um texto qualquer</span>
+</body>
+
+</html>
