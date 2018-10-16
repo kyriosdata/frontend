@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Script</title>
+    <style>
+        #a {
+           color: blue; 
+        }
+
+        #b {
+            color: white;
+            background-color: brown;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <span>Um teste:</span><span id="a"></span>
+    <span id="b"></span>
+
+    <script>
+        document.getElementById("a").innerHTML = "a";
+    </script>
+
+    <script>
+        document.getElementById("b").innerHTML = "b";
+    </script>
+</body>
+
+</html>
